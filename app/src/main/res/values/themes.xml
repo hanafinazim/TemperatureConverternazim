@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Thème principal de l'application -->
+    <style name="Theme.TemperatureConverternazim" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Tu peux personnaliser les couleurs ici plus tard si tu veux -->
+    </style>
+
+</resources>

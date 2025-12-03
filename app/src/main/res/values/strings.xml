@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TemperatureConverternazim</string>
+    <string name="hint_enter_temperature">Enter temperature</string>
+    <string name="btn_convert">Convert</string>
+    <string name="label_result">Result: </string>
+    <string name="btn_add_favorite">Add this conversion to favorites</string>
+    <string name="label_favorites">Favorites:</string>
+
+    <string-array name="temperature_units">
+        <item>Celsius (°C)</item>
+        <item>Fahrenheit (°F)</item>
+        <item>Kelvin (K)</item>
+    </string-array>
+</resources>
