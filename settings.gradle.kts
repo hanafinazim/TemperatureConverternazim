@@ -19,6 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TemperatureConverternazim"
+rootProject.name = "Temperature Converter"
 include(":app")
- 
