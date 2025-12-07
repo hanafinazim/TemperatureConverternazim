@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Champ pour saisir la ville -->
+    <EditText
+        android:id="@+id/editCityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a city (Paris, Tokyo...)"
+        android:inputType="textPersonName" />
+
+    <!-- Bouton pour chercher la météo de la ville -->
+    <Button
+        android:id="@+id/buttonSearchCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEARCH CITY WEATHER"
+        android:layout_marginTop="12dp" />
+
+    <!-- Bouton pour ouvrir la carte du monde -->
+    <Button
+        android:id="@+id/buttonOpenMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OPEN WORLD WEATHER MAP"
+        android:layout_marginTop="8dp" />
+
+    <!-- Résultat météo -->
+    <TextView
+        android:id="@+id/textWeatherResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weather: unknown"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

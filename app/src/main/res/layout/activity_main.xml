@@ -40,22 +40,42 @@
         android:textSize="18sp"
         android:layout_marginTop="12dp" />
 
+    <!-- Bouton météo -->
+    <Button
+        android:id="@+id/buttonGetWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_get_local_weather"
+        android:layout_marginTop="12dp" />
+
+
+    <TextView
+        android:id="@+id/textViewWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weather: unknown"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Bouton pour ajouter aux favoris -->
     <Button
         android:id="@+id/buttonAddFavorite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_add_favorite"
+        android:text="Add this conversion to favorites"
         android:layout_marginTop="16dp" />
 
+    <!-- Titre section favoris -->
     <TextView
         android:id="@+id/textViewFavoritesTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/label_favorites"
+        android:text="Favorites:"
         android:textStyle="bold"
         android:textSize="16sp"
         android:layout_marginTop="16dp" />
 
+    <!-- Liste des favoris -->
     <ListView
         android:id="@+id/listViewFavorites"
         android:layout_width="match_parent"
@@ -64,3 +84,4 @@
         android:layout_marginTop="8dp" />
 
 </LinearLayout>
+

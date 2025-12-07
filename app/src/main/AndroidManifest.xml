@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permissions réseau + localisation -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -11,17 +17,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TemperatureConverternazim">
+
+        <!-- MENU : écran de démarrage -->
         <activity
-            android:name=".MainActivity"
+            android:name=".MenuActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.TemperatureConverternazim">
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- CONVERTISSEUR -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name" />
+
+        <!-- MÉTÉO (écran texte) -->
+        <activity
+            android:name=".WeatherActivity"
+            android:exported="false"
+            android:label="Weather" />
+
+        <!-- CARTE MONDE MÉTÉO -->
+        <activity
+            android:name=".WeatherMapActivity"
+            android:exported="false"
+            android:label="World weather map" />
     </application>
 
 </manifest>

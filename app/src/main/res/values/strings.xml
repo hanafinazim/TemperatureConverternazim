@@ -5,10 +5,12 @@
     <string name="label_result">Result: </string>
     <string name="btn_add_favorite">Add this conversion to favorites</string>
     <string name="label_favorites">Favorites:</string>
+    <string name="btn_get_local_weather">GET LOCAL WEATHER</string>
 
     <string-array name="temperature_units">
         <item>Celsius (°C)</item>
         <item>Fahrenheit (°F)</item>
         <item>Kelvin (K)</item>
     </string-array>
+    <string name="title_activity_weather_map">WeatherMapActivity</string>
 </resources>
